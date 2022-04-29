@@ -8,4 +8,4 @@ This can create a user(with a password and verification token sent to the users 
 
 Things i used in this project: JavaScript with node.js, express for routing, bcrypt for password hashing, dbeaver and sequelize for the database, node mailer with mail trap for all the mail verification,JOI for data validation and postman.
 
-This is just a small project to demonstrate what i can do in JS. I am gonna add later more features and maybe some front end to make something sort of a Facebook clone.
+This is just a small project to demonstrate what i can do in JS. Need to add error handling and later more features.

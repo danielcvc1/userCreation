@@ -1,9 +1,9 @@
 {
-  "name": "test123",
+  "name": "delivery",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start":"nodemon server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,13 @@
   "homepage": "https://github.com/danielcvc1/user#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "express": "^4.17.3",
+    "express": "^4.18.1",
     "joi": "^17.6.0",
     "morgan": "^1.10.0",
     "mysql2": "^2.3.3",
     "nodemailer": "^6.7.3",
     "sequelize": "^6.19.0"
   },
-  "description": ""
+  "description": "Project inspired by a small project I do on my node.js course.",
+  "keywords": []
 }

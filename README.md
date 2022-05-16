@@ -9,3 +9,9 @@ This can create a user(with a password and verification token sent to the users 
 Things i used in this project: JavaScript with node.js, express for routing, bcrypt for password hashing, dbeaver and sequelize for the database, node mailer with mail trap for all the mail verification,JOI for data validation and postman.
 
 This is just a small project to demonstrate what i can do in JS. Need to add error handling and later more features.
+
+
+To start the code in VSC type in console: npm start
+
+
+

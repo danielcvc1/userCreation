@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form id="form" action="">
+    <!-- firstName -->
+
+  <label for="firstName">First name:</label><br>
+  <input type="text" id="firstName" placeholder="Firts Name" ><br>
+    <!-- lastName -->
+
+  <label for="lastName">Last name:</label><br>
+  <input type="text" id="lastName" placeholder="Last Name" value="" ><br><br>
+  <!-- email -->
+
+  <label for="email">e-mail:</label><br>
+  <input type="text" id="email" placeholder="e-mail" value=""><br><br>
+  <!-- password -->
+
+  <label for="password">Password:</label><br>
+  <input type="text" id="password" placeholder="Password" value=""><br><br>
+  <!-- birthYear -->
+  <label for="birthYear">Birth year:</label><br>
+  <input type="number" id="birthYear" placeholder="Year of birth" value=""><br><br>
+  <!-- submit -->
+  <input type="submit" value="Submit">
+</form>
+<!-- Script  -->
+<script>
+
+const form=document.getElementById("form")
+
+
+
+const firstName=document.getElementById("firstName").value
+const lastName=document.getElementById("lastName").value
+const email=document.getElementById("email").value
+const password=document.getElementById("password").value
+const birthYear=document.getElementById("birthYear").value
+const data={firstName,lastName,email,password,birthYear}
+
+const create=()=>{
+  const options={
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(data),
+    
+  }
+  fetch("/user/creation",options)
+
+}
+  
+addEventListener("submit",(e)=>{
+e.preventDefault()
+    create(data)
+  })
+  
+
+</script>
+
+
+
+
+
+
+</body>
+
+
+</html>

@@ -18,8 +18,8 @@ const sendEmail = async (emails, subject, data, uniqtoken) => {
     host: "smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user:"9c8ed8256f3b59" , ////delete when on github
-      pass:"fe0d0c7cde5ba2", ////delete when on github
+      user:"" , ////delete when on github for spam resons
+      pass:"", ////delete when on github for spam resons
     },
   });
   // send mail with defined transport object
